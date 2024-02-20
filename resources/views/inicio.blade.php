@@ -13,6 +13,12 @@
             filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
         }
 
+        img.redimension {
+            width: 500px;
+            height:500px;
+            border-radius: 50%
+        }
+
    </style>
 @endsection
 
@@ -24,12 +30,10 @@
             <h2>Bienvenido al Sistema De Inventario => {{session()->get('usuario') ?? 'Invitado'}}</h2>
         </div>
             
-        
          
-         <b>
-         <b>
+            <img class="mx-auto d-block redimension drop" src="{{asset('logos/logo_covi6.png')}}"> <!-- random image -->
          
-            <img class="mx-auto d-block circular drop" style="width:400px; height:400px" src="{{asset('logos/logo_fge.png')}}"> <!-- random image -->
+            
           
         @include('includes.mensaje')
    
