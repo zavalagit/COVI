@@ -17,7 +17,7 @@
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
 					<div class="brand_logo_container">
-						<img src="{{asset('logos/logo_fge.png')}}" class="brand_logo drop" alt="Logo">
+						<img src="{{asset('logos/logo_covi8.png')}}" class="brand_logo drop" alt="Logo">
 					</div>
 				</div>
 				@if($errors->any())
