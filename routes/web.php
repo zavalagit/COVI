@@ -142,4 +142,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
     /*RUTAS PARA PARA CREAR LOS PDF*/
     Route::get('comprobante-salida/{id}','Inventario\PDFController@comprobante_salida')->name('comprobante-salida');
 
-    /*RUTAS PARA REALIZAR ENTREGAS A GRANEL*/
+    /*RUTAS DE SERVICIOS PARA EL PROYECTO DE COVI*/
+    
