@@ -16,7 +16,7 @@ class CrearTablaObservacionServicio extends Migration
         Schema::create('observacion_servicio', function (Blueprint $table) {
             $table->increments('id');
             $table->longText('observaciones');
-            $table->dateTime('fecha_compra');
+            $table->dateTime('fecha_observacion');
             $table->unsignedInteger('usuario_id');
             $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
             $table->unsignedInteger('servicio_id');

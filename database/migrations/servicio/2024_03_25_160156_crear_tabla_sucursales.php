@@ -18,6 +18,8 @@ class CrearTablaSucursales extends Migration
             $table->string('cio', 50);
             $table->longText('inmueble');
             $table->string('ciudad', 50);
+            $table->unsignedInteger('usuario_id');
+            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
             $table->timestamps();
 
             $table->charset = 'utf8mb4';
